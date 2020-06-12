@@ -1,10 +1,17 @@
 # The Basics {#basics}
 
-This is going to be a short book that introduces the reader to the wonderful world of *Pokemon* and the starters in each game.
+This is going to be a short book that introduces the reader to the wonderful world of **Pokemon** and the starters in each game.
 
-In every Pokemon game, the player starts with one of three Pokemon, usually a grass, water, or fire type. This first Pokemon is called the *starter*.
+In every Pokemon game, the player starts with one of three Pokemon, usually a grass, water, or fire type. This first Pokemon is called the **starter**.
 
+Each starter has 6 different base stats, meaning each has strengths and weaknesses. Here are some tables that show the base stats of each Gen 1 starter: Bulbasaur, Charmander, and Squirtle.
 
+The first graph is **hit points** or **HP**, which is how much damage the Pokemon can take.
+
+```{r nice-fig1, fig.cap='HP values for Gen 1 Starters', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(hitpoints)
+```
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
@@ -16,6 +23,13 @@ plot(pressure, type = 'b', pch = 19)
 Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 
 ```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+```{r nice-tab2, tidy=FALSE}
 knitr::kable(
   head(iris, 20), caption = 'Here is a nice table!',
   booktabs = TRUE

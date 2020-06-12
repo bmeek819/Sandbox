@@ -1,0 +1,107 @@
+--- 
+title: "Pokemon: A Brief Introduction to Starters"
+author: "Benjamin Meek"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Welcome to the wonderful world of Pokemon! This book is simply a practice book for a newcomer to RStudio, GitHub and bookdown. I apologize in advance for any mistakes in formatting, citation, or proper attributing to the Pokemon Co. and Nintendo. Enjoy!"
+---
+--- 
+title: "Pokemon: A Brief Introduction to Starters"
+author: "Benjamin Meek"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Welcome to the wonderful world of Pokemon! This book is simply a practice book for a newcomer to RStudio, GitHub and bookdown. I apologize in advance for any mistakes in formatting, citation, or proper attributing to the Pokemon Co. and Nintendo. Enjoy!"
+---
+
+# Introduction {#intro}
+
+Since this is a book about **Pokemon**, some of the tools I need to practice using are a little hard to include, like *math equations*. Currently there are $8*3+4=28$ starter Pokemon. There are 8 generations, with three starter Pokemon in each gen, for a total of 24, as well as a single starter for the *Let's Go Pikachu* and *Let's Go Eevee* games and Espeon and Umbreon in *Pokemon Colosseum*. 
+
+For more information on any of the Pokemon discussed in this book, a great resource is the fan wiki, [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon). The [Nintendo](https://www.nintendo.com/) website also includes regular updates on new games in the Pokemon franchise, which would mean the addition of more starters! For more about the basics, see Chapter \@ref(basics).
+
+<!--chapter:end:index.Rmd-->
+
+# The Basics {#basics}
+
+This is going to be a short book that introduces the reader to the wonderful world of **Pokemon** and the starters in each game.
+
+In every Pokemon game, the player starts with one of three Pokemon, usually a grass, water, or fire type. This first Pokemon is called the **starter**.
+
+Each starter has 6 different base stats, meaning each has strengths and weaknesses. Here are some tables that show the base stats of each Gen 1 starter: Bulbasaur, Charmander, and Squirtle.
+
+The first graph is **hit points** or **HP**, which is how much damage the Pokemon can take.
+
+```{r nice-fig1, fig.cap='HP values for Gen 1 Starters', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(hitpoints)
+```
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+```{r nice-tab2, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too.Or, if you don't know what you're doing, ask Dr. Macfarlane for help. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Literature
+
+Here is a review of existing methods.
+
+<!--chapter:end:02-literature.Rmd-->
+
+# Methods
+
+We describe our methods in this chapter.
+
+<!--chapter:end:03-method.Rmd-->
+
+# Applications
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Example one
+
+## Example two
+
+<!--chapter:end:04-application.Rmd-->
+
+# Final Words
+
+We have finished a nice book.
+
+<!--chapter:end:05-summary.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:06-references.Rmd-->
+

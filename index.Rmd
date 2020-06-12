@@ -12,6 +12,6 @@ description: "Welcome to the wonderful world of Pokemon! This book is simply a p
 
 # Introduction {#intro}
 
-Since this is a book about **Pokemon**, some of the tools I need to practice using are a little hard to include, like *math equations*. Currently there are $8*3+2=26$ starter Pokemon. There are 8 generations, with three starter Pokemon in each gen, for a total of 24, as well as a single starter for the *Let's Go Pikachu* and *Let's Go Eevee games*. 
+Since this is a book about **Pokemon**, some of the tools I need to practice using are a little hard to include, like *math equations*. Currently there are $8*3+4=28$ starter Pokemon. There are 8 generations, with three starter Pokemon in each gen, for a total of 24, as well as a single starter for the *Let's Go Pikachu* and *Let's Go Eevee* games and Espeon and Umbreon in *Pokemon Colosseum*. 
 
 For more information on any of the Pokemon discussed in this book, a great resource is the fan wiki, [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon). The [Nintendo](https://www.nintendo.com/) website also includes regular updates on new games in the Pokemon franchise, which would mean the addition of more starters! For more about the basics, see Chapter \@ref(basics).
