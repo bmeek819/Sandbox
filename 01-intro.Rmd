@@ -1,6 +1,10 @@
-# Introduction {#intro}
+# The Basics {#basics}
 
-This is going to be a short book that introduces the reader to the world of Pokemon. It is a very brief introduction to *Pokemon*. You will love it. You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+This is going to be a short book that introduces the reader to the wonderful world of *Pokemon* and the starters in each game.
+
+In every Pokemon game, the player starts with one of three Pokemon, usually a grass, water, or fire type. This first Pokemon is called the *starter*.
+
+
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
